@@ -1,0 +1,102 @@
+/* Основний стиль для кнопок */
+button {
+    background-color: #4CAF50; /* Зелений колір */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Темніший зелений при наведенні */
+    transform: scale(1.1); /* Невелике збільшення */
+  }
+  
+  /* Заголовки */
+  h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Темно-сірий */
+  }
+  
+  h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    color: #555; /* Світліший сірий */
+  }
+  
+  /* Секції компонентів */
+  section {
+    border: 2px solid #ddd; /* Світла рамка */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #f9f9f9; /* Легкий сірий фон */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  section:hover {
+    transform: translateY(-5px); /* Невеликий підйом */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Текст у кнопках */
+  button:active {
+    background-color: #3e8e41;
+    transform: translateY(2px); /* Невелике натискання */
+  }
+  
+  /* Глобальний стиль таблиць */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  td {
+    background-color: #f2f2f2;
+  }
+  
+  /* Додаткові елементи */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+  }
+  

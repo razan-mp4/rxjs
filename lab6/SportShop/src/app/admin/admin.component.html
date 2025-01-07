@@ -1,0 +1,37 @@
+<mat-toolbar color="primary">
+    <div>
+        <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+            <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+            <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+        </button>
+        SportShop Administration
+    </div>
+</mat-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+        <div>
+            <button mat-button class="menu-button" routerLink="/admin/main/products" routerLinkActive="mat-accent"
+                (click)="sidenav.close()">
+                <mat-icon>shopping_cart</mat-icon>
+                <span>Products</span>
+            </button>
+        </div>
+        <div>
+            <button mat-button class="menu-button" routerLink="/admin/main/orders" routerLinkActive="mat-accent"
+                (click)="sidenav.close()">
+                <mat-icon>local_shipping</mat-icon>
+                <span>Orders</span>
+            </button>
+        </div>
+        <mat-divider></mat-divider>
+        <button mat-button class="menu-button logout" (click)="logout()">
+            <mat-icon>logout</mat-icon>
+            <span>Logout</span>
+        </button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

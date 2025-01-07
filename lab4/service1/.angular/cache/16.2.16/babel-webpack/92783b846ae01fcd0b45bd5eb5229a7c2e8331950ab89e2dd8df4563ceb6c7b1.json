@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Phone {\n  name;\n  price;\n  constructor(name, price) {\n    this.name = name;\n    this.price = price;\n  }\n}","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
