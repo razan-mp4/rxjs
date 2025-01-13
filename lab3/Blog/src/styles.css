@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    background: linear-gradient(135deg, #f0f4f8, #dfe9f3); /* Soft gradient background */
+    color: #2e3b4e; /* Elegant dark color */
+    padding: 2rem 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e6eaf0;
+    overflow: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: #34495e;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    margin-top: 0.5rem;
+    background: linear-gradient(135deg, #3498db, #1abc9c);
+    border-radius: 2px;
+    margin-left: 0;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1abc9c;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    color: #ffffff;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(26, 188, 156, 0.3);
+}
+
+/* Inputs and Forms */
+input,
+textarea {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    border: 2px solid #e0e4e8;
+    border-radius: 15px;
+    margin-top: 1rem;
+    background: #f9f9f9;
+    color: #2e3b4e;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+/* Search Bar */
+input[type="text"] {
+    padding: 0.8rem 1.2rem;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    background: #f0f4f8;
+    border: 1px solid #dfe4ea;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+}
+
+/* Cards */
+.card {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h2 {
+    font-size: 1.6rem;
+    color: #34495e;
+    margin-bottom: 0.8rem;
+}
+
+.card p {
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Decorative Horizontal Rule */
+hr {
+    border: 0;
+    border-top: 2px solid #e4e9f0;
+    margin: 2rem 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #95a5a6;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    color: #1abc9c;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+    padding: 1.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+}
+
+input,
+textarea {
+    font-size: 0.9rem;
+}
+}
